@@ -21,4 +21,10 @@ public class MinutesBetweenTest {
                 "10:00am"));
     }
 
+    @Test
+    public void whenExtractFirstTime_withElevenAmToTwelvePm_shouldExtractUpToFirstCharacters() {
+        assertTrue(StringUtils.equals(MinutesBetweenTwoTimes.extractFirstTime("11:00am-12:00pm"),
+                "11:00am"));
+    }
+
 }
