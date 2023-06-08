@@ -38,4 +38,10 @@ public class FizzBuzzTest {
         assertTrue(FizzBuzz.calcFizzBuzz(5) == "Buzz");
     }
 
+    @Test
+    public void whenInputIsIntMultipleOfFive_thenReturnStringBuzz() {
+        assertTrue(FizzBuzz.calcFizzBuzz(5) == "Buzz");
+        assertTrue(FizzBuzz.calcFizzBuzz(10) == "Buzz");
+    }
+
 }
