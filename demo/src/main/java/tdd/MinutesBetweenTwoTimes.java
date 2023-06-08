@@ -9,8 +9,10 @@ public class MinutesBetweenTwoTimes {
         return 1;
     }
 
-    public static String extractFirstTime(String string) {
-        return "10:00am";
+    public static String extractFirstTime(String times) {
+        int indexOfDash = times.indexOf("-");
+        String firstTime = times.substring(0, indexOfDash);
+        return firstTime;
     }
 
 }
