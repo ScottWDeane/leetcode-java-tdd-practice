@@ -10,6 +10,6 @@ public class FizzBuzz {
     }
 
     public static String calcFizzBuzz(int i) {
-        return "";
+        return "Fizz";
     }
 }
