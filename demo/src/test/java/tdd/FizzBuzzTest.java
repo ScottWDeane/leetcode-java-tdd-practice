@@ -26,4 +26,9 @@ public class FizzBuzzTest {
         assertTrue(FizzBuzz.calcFizzBuzz(3) == "Fizz");
     }
 
+    @Test
+    public void whenInputIsFive_thenReturnStringBuzz() {
+        assertTrue(FizzBuzz.calcFizzBuzz(5) == "Buzz");
+    }
+
 }
