@@ -27,6 +27,13 @@ public class FizzBuzzTest {
     }
 
     @Test
+    public void whenInputIsIntMultipleOfThree_thenReturnStringFizz() {
+        assertTrue(FizzBuzz.calcFizzBuzz(3) == "Fizz");
+        assertTrue(FizzBuzz.calcFizzBuzz(6) == "Fizz");
+        assertTrue(FizzBuzz.calcFizzBuzz(9) == "Fizz");
+    }
+
+    @Test
     public void whenInputIsFive_thenReturnStringBuzz() {
         assertTrue(FizzBuzz.calcFizzBuzz(5) == "Buzz");
     }
