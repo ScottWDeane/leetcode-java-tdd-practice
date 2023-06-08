@@ -10,6 +10,11 @@ public class FizzBuzz {
     }
 
     public static String calcFizzBuzz(int i) {
-        return "Fizz";
+        if (i == 3) {
+            return "Fizz";
+        } else if (i == 5) {
+            return "Buzz";
+        }
+        return "";
     }
 }
