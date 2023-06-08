@@ -21,4 +21,9 @@ public class FizzBuzzTest {
         assertTrue(FizzBuzz.calcFizzBuzz(0) instanceof String);
     }
 
+    @Test
+    public void whenInputIsIntThree_thenReturnStringFizz() {
+        assertTrue(FizzBuzz.calcFizzBuzz(3) == "Fizz");
+    }
+
 }
