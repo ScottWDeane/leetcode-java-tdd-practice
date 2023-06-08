@@ -44,4 +44,9 @@ public class FizzBuzzTest {
         assertTrue(FizzBuzz.calcFizzBuzz(10) == "Buzz");
     }
 
+    @Test
+    public void whenInputIsIntFifteen_thenReturnFizzBuzz() {
+        assertTrue(FizzBuzz.calcFizzBuzz(15) == "FizzBuzz");
+    }
+
 }
