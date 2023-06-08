@@ -5,4 +5,8 @@ public class MinutesBetweenTwoTimes {
 
     }
 
+    public static Integer calcDifference(String string) {
+        return 1;
+    }
+
 }
