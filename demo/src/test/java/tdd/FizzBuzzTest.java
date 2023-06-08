@@ -15,4 +15,10 @@ public class FizzBuzzTest {
     public void shouldAnswerWithTrue() {
         assertTrue(true);
     }
+
+    @Test
+    public void whenFizzBuzzReceivesAnyInt_thenReturnAnyString() {
+        assertTrue(FizzBuzz.calcFizzBuzz(0) instanceof String);
+    }
+
 }
