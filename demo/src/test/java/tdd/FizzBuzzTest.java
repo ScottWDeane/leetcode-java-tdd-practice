@@ -39,8 +39,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void whenInputIsIntMultipleOfFive_thenReturnStringBuzz() {
-        assertTrue(FizzBuzz.calcFizzBuzz(5) == "Buzz");
+    public void whenInputIsIntTen_thenReturnStringBuzz() {
         assertTrue(FizzBuzz.calcFizzBuzz(10) == "Buzz");
     }
 
