@@ -8,4 +8,9 @@ public class MinutesBetweenTest {
     public void shouldAnswerWithTrue() {
         assertTrue(true);
     }
+
+    @Test
+    public void whenCalledWithString_shouldReturnInteger() {
+        assertTrue(MinutesBetweenTwoTimes.calcDifference("anyString") instanceof Integer);
+    }
 }
