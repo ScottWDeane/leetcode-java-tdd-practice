@@ -48,4 +48,10 @@ public class FizzBuzzTest {
         assertTrue(FizzBuzz.calcFizzBuzz(15) == "FizzBuzz");
     }
 
+    @Test
+    public void whenInputIsMultipleOfThreeAndFix_thenReturnStringFizzBuss() {
+        assertTrue(FizzBuzz.calcFizzBuzz(15) == "FizzBuzz");
+        assertTrue(FizzBuzz.calcFizzBuzz(30) == "FizzBuzz");
+        assertTrue(FizzBuzz.calcFizzBuzz(45) == "FizzBuzz");
+    }
 }
