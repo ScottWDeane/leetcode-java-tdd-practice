@@ -9,4 +9,8 @@ public class MinutesBetweenTwoTimes {
         return 1;
     }
 
+    public static String extractFirstTime(String string) {
+        return "10:00am";
+    }
+
 }
