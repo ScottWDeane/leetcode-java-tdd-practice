@@ -60,5 +60,12 @@ public class MinutesBetweenTest {
                 "12:30pm"));
     }
 
+    @Test
+    public void whenSubtractMethod_withArguments_OneHundred_and_OneHundredAndFifty_shouldReturnFifty() {
+        int firstTime = 100; // 1:40 AM
+        int secondTime = 150; // 2:30 AM
+        assertTrue(MinutesBetweenTwoTimes.subtractTimes(firstTime, secondTime) == 50);
+    }
+
 
 }
