@@ -90,5 +90,16 @@ public class MinutesBetweenTest {
                 secondTimeAsMinutes) == expectedMinutesDifference);
     }
 
+    @Test
+    public void whenRan_withTimesNinePMToSixThirtyAM_shouldResultIn_FiveHundredSeventy() {
+        String times = "9:00pm-6:30am"; // 1260 - 390
+        String firstTime = MinutesBetweenTwoTimes.extractFirstTime(times);
+        String secondTime = MinutesBetweenTwoTimes.extractSecondTime(times);
+        int firstTimeAsMinutes = MinutesBetweenTwoTimes.convertTimeToMinutes(firstTime);
+        int secondTimeAsMinutes = MinutesBetweenTwoTimes.convertTimeToMinutes(secondTime);
+        int expectedMinutesDifference = 570;
+        assertTrue(MinutesBetweenTwoTimes.subtractTimes(firstTimeAsMinutes,
+                secondTimeAsMinutes) == expectedMinutesDifference);
+    }
 
 }
