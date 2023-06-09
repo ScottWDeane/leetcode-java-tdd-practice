@@ -92,7 +92,7 @@ public class MinutesBetweenTest {
 
     @Test
     public void whenRan_withTimesNinePMToSixThirtyAM_shouldResultIn_FiveHundredSeventy() {
-        String times = "9:00pm-6:30am"; // 1260 - 390, which is 570 minutes between
+        String times = "9:00pm-6:30am";
         String firstTime = MinutesBetweenTwoTimes.extractFirstTime(times);
         String secondTime = MinutesBetweenTwoTimes.extractSecondTime(times);
         int firstTimeAsMinutes = MinutesBetweenTwoTimes.convertTimeToMinutes(firstTime);
