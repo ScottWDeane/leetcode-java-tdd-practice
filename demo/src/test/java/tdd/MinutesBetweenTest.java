@@ -47,4 +47,9 @@ public class MinutesBetweenTest {
         assertTrue(MinutesBetweenTwoTimes.convertTimeToMinutes("9:00am") == 540);
     };
 
+    @Test
+    public void whenConvertTimeToMinutes_withNineThirtyAM_shouldReturnInt570() {
+        assertTrue(MinutesBetweenTwoTimes.convertTimeToMinutes("9:30am") == 570);
+    }
+
 }
