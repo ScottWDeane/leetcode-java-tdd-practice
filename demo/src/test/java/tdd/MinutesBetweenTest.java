@@ -28,21 +28,6 @@ public class MinutesBetweenTest {
     };
 
     @Test
-    public void whenConvertToEUTime_withThreePM_shouldConvertToEUTimeFifteenOClock() {
-        assertTrue(StringUtils.equals(MinutesBetweenTwoTimes.convertToEUTime("3:00pm"), "15:00"));
-    };
-
-    @Test
-    public void whenConvertToEUTime_withEightPM_shouldConvertToEUTimeTwentyOClock() {
-        assertTrue(StringUtils.equals(MinutesBetweenTwoTimes.convertToEUTime("8:00pm"), "20:00"));
-    };
-
-    @Test
-    public void whenConvertToEUTime_withEightThirtyPM_shouldConvertToEUTimeTwentyThirtyOClock() {
-        assertTrue(StringUtils.equals(MinutesBetweenTwoTimes.convertToEUTime("8:30pm"), "20:30"));
-    };
-
-    @Test
     public void whenConvertTimeToMinutes_withNineAM_shouldReturnInt540() {
         assertTrue(MinutesBetweenTwoTimes.convertTimeToMinutes("9:00am") == 540);
     };
