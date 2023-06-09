@@ -38,4 +38,8 @@ public class MinutesBetweenTwoTimes {
         // add minutes to total minutes
         return totalMinutes + originalTimeMinutes;
     }
+
+    public static int subtractTimes(int firstTime, int secondTime) {
+        return 50;
+    }
 }
