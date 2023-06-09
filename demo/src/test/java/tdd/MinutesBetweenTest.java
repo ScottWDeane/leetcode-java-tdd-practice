@@ -79,7 +79,7 @@ public class MinutesBetweenTest {
     }
 
     @Test
-    public void whenRan_withTimesEightAMToThreeThirtyPM_shouldResultInFourHundredFifty() {
+    public void whenRan_withTimesEightAMToThreeThirtyPM_shouldResultIn_FourHundredFifty() {
         String times = "8:00am-3:30pm";
         String firstTime = MinutesBetweenTwoTimes.extractFirstTime(times);
         String secondTime = MinutesBetweenTwoTimes.extractSecondTime(times);
