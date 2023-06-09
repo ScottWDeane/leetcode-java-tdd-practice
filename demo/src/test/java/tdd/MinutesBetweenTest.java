@@ -27,4 +27,9 @@ public class MinutesBetweenTest {
                 "11:00am"));
     }
 
+    @Test
+    public void whenConvertToEUTime_withThreePM_shouldConvertToEUTimeFifteen() {
+        assertTrue(StringUtils.equals(MinutesBetweenTwoTimes.convertToEUTime("3:00pm"), "15:00"));
+    }
+
 }
