@@ -13,8 +13,7 @@ public class MinutesBetweenTwoTimes {
 
     public static String extractFirstTime(String times) {
         int indexOfDash = times.indexOf("-");
-        String firstTime = times.substring(0, indexOfDash);
-        return firstTime;
+        return times.substring(0, indexOfDash);
     }
 
     public static String extractSecondTime(String times) {
