@@ -42,4 +42,9 @@ public class MinutesBetweenTest {
         assertTrue(StringUtils.equals(MinutesBetweenTwoTimes.convertToEUTime("8:30pm"), "20:30"));
     };
 
+    @Test
+    public void whenConvertTimeToMinutes_withNineAM_shouldReturnInt540() {
+        assertTrue(MinutesBetweenTwoTimes.convertTimeToMinutes("9:00am") == 540);
+    };
+
 }
