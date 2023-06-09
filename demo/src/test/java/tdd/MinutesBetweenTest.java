@@ -53,5 +53,11 @@ public class MinutesBetweenTest {
                 "12:00pm"));
     }
 
+    @Test
+    public void whenExtractSecondTime_withElevenThirtyAmToTwelveThirtyPm_shouldReturnStringTwelveThirtyPM() {
+        assertTrue(StringUtils.equals(MinutesBetweenTwoTimes.extractSecondTime("11:30am-12:30pm"),
+                "12:30pm"));
+    }
+
 
 }
