@@ -12,7 +12,8 @@ public class MinutesBetweenTest {
 
     @Test
     public void whenCalledWithString_shouldReturnInteger() {
-        assertTrue(MinutesBetweenTwoTimes.calcDifference("anyString") instanceof Integer);
+        assertTrue(MinutesBetweenTwoTimes
+                .calcDifferenceBetweenTimesRunner("anyString") instanceof Integer);
     };
 
     @Test

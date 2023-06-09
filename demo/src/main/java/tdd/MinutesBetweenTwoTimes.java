@@ -7,7 +7,7 @@ public class MinutesBetweenTwoTimes {
 
     }
 
-    public static Integer calcDifference(String string) {
+    public static Integer calcDifferenceBetweenTimesRunner(String string) {
         return 1;
     }
 
@@ -38,5 +38,4 @@ public class MinutesBetweenTwoTimes {
         // add minutes to total minutes
         return totalMinutes + originalTimeMinutes;
     }
-
 }
