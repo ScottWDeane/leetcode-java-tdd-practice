@@ -42,6 +42,11 @@ public class MinutesBetweenTest {
         assertTrue(MinutesBetweenTwoTimes.convertTimeToMinutes("3:15pm") == 915);
     }
 
+    @Test
+    public void whenConvertTimeToMinutes_withElevenFiftyNinePM_shouldReturnInt1439() {
+        assertTrue(MinutesBetweenTwoTimes.convertTimeToMinutes("11:59pm") == 1439);
+    }
+
 
 
 }
