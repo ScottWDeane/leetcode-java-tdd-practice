@@ -78,5 +78,17 @@ public class MinutesBetweenTest {
                 secondTime) == expectedMinutesDifference);
     }
 
+    @Test
+    public void whenRan_withTimesEightAMToThreeThirtyPM_shouldResultInFourHundredFifty() {
+        String times = "8:00am-3:30pm";
+        String firstTime = MinutesBetweenTwoTimes.extractFirstTime(times);
+        String secondTime = MinutesBetweenTwoTimes.extractSecondTime(times);
+        int firstTimeAsMinutes = MinutesBetweenTwoTimes.convertTimeToMinutes(firstTime);
+        int secondTimeAsMinutes = MinutesBetweenTwoTimes.convertTimeToMinutes(secondTime);
+        int expectedMinutesDifference = 450;
+        assertTrue(MinutesBetweenTwoTimes.subtractTimes(firstTimeAsMinutes,
+                secondTimeAsMinutes) == expectedMinutesDifference);
+    }
+
 
 }
