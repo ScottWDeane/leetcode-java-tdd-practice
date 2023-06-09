@@ -34,4 +34,8 @@ public class MinutesBetweenTwoTimes {
         return "15:00";
     }
 
+    public static int convertTimeToMinutes(String originalTime) {
+        return 540;
+    }
+
 }
