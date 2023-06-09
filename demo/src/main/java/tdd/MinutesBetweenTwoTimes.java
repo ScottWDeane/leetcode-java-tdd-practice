@@ -18,7 +18,21 @@ public class MinutesBetweenTwoTimes {
     }
 
     public static int convertTimeToMinutes(String originalTime) {
-        return 540;
+        int totalMinutes = 0;
+        // grab the hours
+        int originalTimeHourAsInt =
+                Integer.parseInt(originalTime.substring(0, originalTime.indexOf(":")));
+        // if last two characters are "pm", then we need to add 12 to the original time
+        if (StringUtils.equalsIgnoreCase(originalTime.substring(originalTime.length() - 2), "pm")) {
+            totalMinutes = (originalTimeHourAsInt + 12) * 60;
+        } else {
+            totalMinutes = originalTimeHourAsInt * 60;
+        }
+        // grab the minutes
+        int originalTimeMinutes = Integer.parseInt(
+                originalTime.substring(originalTime.indexOf(":") + 1, originalTime.length() - 2));
+        // add minutes to total minutes
+        return totalMinutes + originalTimeMinutes;
     }
 
 }
