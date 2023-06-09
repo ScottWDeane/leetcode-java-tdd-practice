@@ -32,4 +32,9 @@ public class MinutesBetweenTest {
         assertTrue(StringUtils.equals(MinutesBetweenTwoTimes.convertToEUTime("3:00pm"), "15:00"));
     }
 
+    @Test
+    public void whenConvertToEUTime_withEightPM_shouldConvertToEUTimeTwenty() {
+        assertTrue(StringUtils.equals(MinutesBetweenTwoTimes.convertToEUTime("8:00pm"), "20:00"));
+    }
+
 }
