@@ -69,6 +69,13 @@ public class MinutesBetweenTest {
                 secondTime) == expectedMinutesDifference);
     }
 
+    @Test
+    public void whenSubtractMethod_withArguments_TwoHundredFiftyFive_and_SevenHundredThirty_shouldReturnFourHundredSeventyFive() {
+        int firstTime = 255; // 4:15 AM
+        int secondTime = 730; // 12:10 PM
+        int expectedMinutesDifference = 475;
+        assertTrue(MinutesBetweenTwoTimes.subtractTimes(firstTime,
+                secondTime) == expectedMinutesDifference);
     }
 
 
