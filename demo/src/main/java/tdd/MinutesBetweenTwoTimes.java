@@ -26,8 +26,8 @@ public class MinutesBetweenTwoTimes {
         // grab the hours
         int originalTimeHourAsInt =
                 Integer.parseInt(originalTime.substring(0, originalTime.indexOf(":")));
-        // if last two characters are "pm", then we need to add 12 to the original time
-        if (StringUtils.equalsIgnoreCase(originalTime.substring(originalTime.length() - 2), "pm")) {
+        if (StringUtils.equalsIgnoreCase(originalTime.substring(originalTime.length() - 2), "pm") 
+            && originalTimeHourAsInt != 12) {
             totalMinutes = (originalTimeHourAsInt + 12) * 60;
         } else {
             totalMinutes = originalTimeHourAsInt * 60;
