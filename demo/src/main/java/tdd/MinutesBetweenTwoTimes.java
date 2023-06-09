@@ -40,6 +40,6 @@ public class MinutesBetweenTwoTimes {
     }
 
     public static int subtractTimes(int firstTime, int secondTime) {
-        return 50;
+        return secondTime - firstTime;
     }
 }
