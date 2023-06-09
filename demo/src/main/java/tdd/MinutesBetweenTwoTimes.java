@@ -40,6 +40,12 @@ public class MinutesBetweenTwoTimes {
     }
 
     public static int subtractTimes(int firstTime, int secondTime) {
+        // if times overlap midnight (ie, 10:00pm-2:00am)
+        if (firstTime > secondTime) {
+            int fullClock = 24 * 60;
+            return fullClock - firstTime + secondTime;
+        }
+        // when times are in the same day (ie, 8:00am-3:00pm)
         return secondTime - firstTime;
     }
 }
