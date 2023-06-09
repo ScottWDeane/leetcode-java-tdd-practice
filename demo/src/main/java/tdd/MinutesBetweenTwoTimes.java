@@ -17,7 +17,8 @@ public class MinutesBetweenTwoTimes {
     }
 
     public static String extractSecondTime(String times) {
-        return "12:00pm";
+        int indexOfDash = times.indexOf("-");
+        return times.substring(indexOfDash + 1, times.length());
     }
 
     public static int convertTimeToMinutes(String originalTime) {
