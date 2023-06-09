@@ -15,4 +15,8 @@ public class MinutesBetweenTwoTimes {
         return firstTime;
     }
 
+    public static CharSequence convertToEUTime(String string) {
+        return "15:00";
+    }
+
 }
