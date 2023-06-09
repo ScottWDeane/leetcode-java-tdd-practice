@@ -1,5 +1,7 @@
 package tdd;
 
+import org.apache.commons.lang3.StringUtils;
+
 public class MinutesBetweenTwoTimes {
     public static void main(String[] args) {
 
@@ -15,7 +17,17 @@ public class MinutesBetweenTwoTimes {
         return firstTime;
     }
 
-    public static CharSequence convertToEUTime(String string) {
+    public static String convertToEUTime(String americanTime) {
+        String convertedTime = americanTime.substring(0, americanTime.length() - 2);
+        if (StringUtils.equalsIgnoreCase(americanTime.substring(americanTime.length() - 2), "pm")) {
+            int originalTimeAsInt =
+                    Integer.parseInt(americanTime.substring(0, americanTime.indexOf(":")));
+            convertedTime = Integer.toString(originalTimeAsInt + 12) + ":00";
+            return convertedTime;
+        } else if (StringUtils.equalsIgnoreCase(americanTime.substring(americanTime.length() - 2),
+                "am")) {
+            return convertedTime;
+        }
         return "15:00";
     }
 
