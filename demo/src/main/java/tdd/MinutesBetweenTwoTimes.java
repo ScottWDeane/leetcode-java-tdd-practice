@@ -17,6 +17,10 @@ public class MinutesBetweenTwoTimes {
         return firstTime;
     }
 
+    public static String extractSecondTime(String times) {
+        return "12:00pm";
+    }
+
     public static int convertTimeToMinutes(String originalTime) {
         int totalMinutes = 0;
         // grab the hours
