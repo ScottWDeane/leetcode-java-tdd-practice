@@ -25,4 +25,12 @@ public class TwoSumTest {
         int[] expectedIndices = {1, 2};
         assertArrayEquals(TwoSum.twoSum(intArray, target), expectedIndices);
     }
+
+    @Test
+    public void whenGiven_NumArray_3_3_withTarget_6_returnIndices_0_1() {
+        int[] intArray = {3, 3};
+        int target = 6;
+        int[] expectedIndices = {0, 1};
+        assertArrayEquals(TwoSum.twoSum(intArray, target), expectedIndices);
+    }
 }
